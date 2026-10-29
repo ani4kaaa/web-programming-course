@@ -4,14 +4,17 @@
   "description": "`trainer/` — единая рабочая папка приложения курса. В ней пока нет `package.json`, lockfile, конфигурации сборщика и исходников: проект создаётся студентом на L1. Поэтому до выполнения L1 команды `npm` из этой папки запускать не нужно.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "check": "tsc --noEmit",
+    "demo": "tsx src/demo.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "devDependencies": {
-    "tsx": "^4.23.13",
-    "typescript": "^5.8.3"
-  }
+    "tsx": "4.23.13",
+    "typescript": "5.8.3"
+  },
+  "private": true
 }
